@@ -1,2 +1,2 @@
 # etch-a-sketch
-TheOdinProject - Etch - a - Sketch project.
+TheOdinProject - Etch-a-Sketch project.
