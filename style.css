@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  gap: 1px;
+  border: 3px solid black;
+  border-radius: 24px;
+  background-color: rgba(171, 197, 26, 0.123);
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background-color: rgba(182, 189, 209, 0.185);
+}
+
+.cell:hover {
+  background-color: rgba(50, 51, 54, 0.404);
+}
