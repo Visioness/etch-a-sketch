@@ -40,10 +40,11 @@ body {
 
 .cell {
   border-radius: 2px;
+  transition: background-color 0.2s ease;
 }
 
 .cell:hover {
-  box-shadow: 0 0 24px 4px rgba(56, 56, 56, 0.541);
+  box-shadow: 0 0 8px 2px rgba(56, 56, 56, 0.541);
 } 
 
 button {
