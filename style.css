@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&display=swap');
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Pixelify Sans", serif;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+  gap: 4px;
   padding: 20px;
+  background-color: rgb(29, 7, 7);
 }
 
 .container {
@@ -16,12 +23,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 800px;
   gap: 1px;
-  border: 3px solid black;
-  border-radius: 24px;
-  background-color: rgba(171, 197, 26, 0.123);
+  padding: 8px;
+  border: 5px solid rgba(255, 153, 0, 0.521);
+  border-radius: 12px;
+  background-color: rgba(255, 253, 244, 0.89);
 }
 
 .row {
@@ -31,12 +39,42 @@ body {
 }
 
 .cell {
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-  background-color: rgba(182, 189, 209, 0.185);
+  border-radius: 2px;
 }
 
 .cell:hover {
-  background-color: rgba(50, 51, 54, 0.404);
+  box-shadow: 0 0 24px 4px rgba(56, 56, 56, 0.541);
+} 
+
+button {
+  padding: 2px 8px;
+  font-size: 20px;
+  color: rgb(255, 246, 196);
+  background-color: transparent;
+  width: 200px;
+  border: 2px solid rgba(255, 153, 0, 0.432);
+  border-radius: 16px 16px 4px 4px;
+}
+
+button:hover {
+  background-color: rgb(255, 246, 196);
+  color: rgb(29, 7, 7);
+}
+
+#reset {
+  border-radius: 4px 4px 4px 16px;
+}
+
+#rainbow {
+  border-radius: 4px 4px 16px 4px;
+}
+
+.active {
+  background-color: rgb(255, 246, 196);
+  color: rgb(29, 7, 7);
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(255, 246, 196);
 }
